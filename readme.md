@@ -60,7 +60,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je focus:** -surface plane-
 
-**Je opdracht:** -https://www.mayple.com/-
+**Je opdracht:** https://www.mayple.com/
 
 **Screenshot(s):**
 
