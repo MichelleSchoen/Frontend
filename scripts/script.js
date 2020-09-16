@@ -34,7 +34,7 @@ increase: '+150%' }]
 
 
 var persoonImg = document.querySelector('#persoon');
-var persoonNaam = document.querySelector('#persoon-naam')
+var persoonNaam = document.querySelector('#naam-persoon')
 var persoonLocatie = document.querySelector('#locatie')
 var persoonExpertise = document.querySelector('#expertise')
 var persoonIncrease = document.querySelector('#sales')
@@ -52,11 +52,12 @@ function toonPersoon() {
 	setTimeout( anderPersoon, 4000) 
 	
 	// het tonen van de plaatjes.
-	persoonInformatie[beeldfase].img_url
+
+ 	persoonInformatie[beeldfase].img_url
 	persoonNaam.textContent = persoonInformatie[beeldfase].naam;
 	persoonLocatie.textContent = persoonInformatie[beeldfase].locatie;
 	persoonIncrease = persoonInformatie[beeldfase].increase;
-	image.src = persoonInformatie[beeldfase].img_url;
+	persoonImg.src = 'images/' + persoonInformatie[beeldfase].img_url;
 	persoonExpertise.textContent = persoonInformatie[beeldfase].expertise;
 }
 
