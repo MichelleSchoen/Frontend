@@ -69,3 +69,14 @@ main div {
 #persoon {
 	width: 100%
 }
+
+ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;	
+}
+
+li img:nth-child(1){
+	width: 6em;
+}
+
