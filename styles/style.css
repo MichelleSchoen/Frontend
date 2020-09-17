@@ -78,5 +78,94 @@ ul {
 
 li img:nth-child(1){
 	width: 6em;
+	padding: 0.5em;
 }
 
+
+article img {
+	width: 9em;
+	padding-top: 0.5em;
+	padding-left: -0.5em;
+
+}
+
+h2 {
+font-size: 1.2em;
+font-weight: 900;
+
+}
+
+h3 {font-size: 2.8vw;
+
+}
+
+article {
+
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: -1em;
+}
+
+.witblok {
+	display: flex;
+	flex-direction: column;
+	box-shadow: -3px -1px 12px 6px rgba(0,0,0,0.06);
+	padding: 1em;
+	padding-right: 1em;
+	border-style: solid 1px gray;
+
+} 
+
+.pmetmarge {
+	margin: 1em;
+}
+
+p {
+	margin: 0em;
+}
+
+
+hr {
+	background-color: #D1D3D4;
+}
+
+
+li {
+	display: flex;
+	margin-top: 2em;
+
+}
+
+section li img {
+	margin-top: -1.2em;
+}
+
+section li{
+margin-left: -2em;
+}
+
+.sponsortitel{
+	font-size: 1em;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 5em;
+}
+
+.titelssections {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center; 
+	font-size: 1.7em;
+	margin: 1em;
+	margin-top: 2em;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: 900;
+	display: flex;
+	justify-content: center;
+}

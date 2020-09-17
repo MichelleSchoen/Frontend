@@ -38,11 +38,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Ik vond het tot nu toe best goed gaan. Ik heb het meeste moeite met het aanspreken van de elementen in CSS. Ik merk dat ik al snel werk met classes, terwijl het ook anders kan. Verder heb ik nog moeite met als er veel elementen in een kleine ruimte staan. 
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent-
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/img4.png)
+
 
 ### Agenda voor meeting
 

@@ -1,7 +1,7 @@
 // JavaScript Document
 
 // afbeeldingen personen:
-// var persoonPlaatjes = ['persoon1.png', 'persoon2.png', 'persoon3.png', 'persoon4.png' ]
+var persoonPlaatjes = ['persoon1.png', 'persoon2.png', 'persoon3.png', 'persoon4.png' ]
 var persoonInformatie = 
 [{
 img_url: 'persoon1.png',
@@ -56,7 +56,7 @@ function toonPersoon() {
  	persoonInformatie[beeldfase].img_url
 	persoonNaam.textContent = persoonInformatie[beeldfase].naam;
 	persoonLocatie.textContent = persoonInformatie[beeldfase].locatie;
-	persoonIncrease = persoonInformatie[beeldfase].increase;
+	persoonIncrease.textContent = persoonInformatie[beeldfase].increase;
 	persoonImg.src = 'images/' + persoonInformatie[beeldfase].img_url;
 	persoonExpertise.textContent = persoonInformatie[beeldfase].expertise;
 }
