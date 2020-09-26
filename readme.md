@@ -47,11 +47,13 @@ Ik vond het tot nu toe best goed gaan. Ik heb het meeste moeite met het aansprek
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+Hoe kan ik CSS verbeteren?
+Hoe kan ik op een andere manier een carrousel maken?
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+Ik kan css verbeteren door gebruik te maken van:
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/css.png)
 
 
 
