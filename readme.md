@@ -30,7 +30,14 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+Agenda 212-a
+Carrousel (css/html of js, beste optie?) 
+Css image slider animation 
+Text responsive maken- fluid typografie of @mediaQueries? 
+:hover bug (Jelle)
+slider van tekst en dingen toevoegen in winkelmandje (Ysabella)
+
+Het gaat best goed. Alle problemen van de vorige voortgang zijn opgelost en ik heb een tweede pagina erbij. Ik zou me graag meer willen focusesen op het surface plane maken van de website. 
 
 
 
