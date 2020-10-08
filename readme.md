@@ -24,7 +24,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+Agenda 212-a
+Carousel met overflow-x: scroll: 
+Hartje dat vult als je er op klikt 
+Mag button hover in javascript? Of moet het in CSS
+Uitklapbaar menu
 
 
 

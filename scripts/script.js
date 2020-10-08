@@ -38,10 +38,15 @@ var persoonNaam = document.querySelector('#naam-persoon')
 var persoonLocatie = document.querySelector('#locatie')
 var persoonExpertise = document.querySelector('#expertise')
 var persoonIncrease = document.querySelector('#sales')
+var hamburgerButton = document.querySelector('#hamburger')
 
 // toestand
 var beeldfase = 0 ;
-toonPersoon() ;
+ 
+if(persoonImg){
+
+	toonPersoon()
+}
 
 
 //function eventHandlers
@@ -73,3 +78,9 @@ function anderPersoon() {
 	
 	toonPersoon() ;
 }
+
+function toonMenu() {
+	document.body.classList.toggle('active');
+}
+
+hamburgerButton.addEventListener('click' , toonMenu );
