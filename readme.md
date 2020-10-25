@@ -14,11 +14,20 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Wat ging er goed?
+Er ging ondanks een paar probleempjes veel goed bij het maken van mijn website. Ik vond het leuk om meerdere dingen te proberen en heb daarom mijn website beide een beetje surface plane en responsive gemaakt. 
+
+Wat ging er minder goed?
+Wat er minder goed ging was dat bij het gebruik van media en position absolute soms heel mijn website chaotish werd, waardoor ik veel tijd heb besteed aan het oplossen van die problemen. Ook heb ik veel moeite gehad met grid en flexbox en margins, want soms wist ik niet waarom iets niet werkte. 
 
 **Screenshot(s):**
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/eindresultaat1.png)
 
--screenshot(s) van je eindresultaat-
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/eindresultaat2.png)
+
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/eindresultaat3.png)
+
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/eindresultaat4.png)
 
 
 
@@ -29,6 +38,8 @@ Carousel met overflow-x: scroll:
 Hartje dat vult als je er op klikt 
 Mag button hover in javascript? Of moet het in CSS
 Uitklapbaar menu
+
+Ik heb de mobiele website af en ik ga me nu verdiepen in het maken van surface plane of responsive. We hebben het tijdens de meeting gehad over grid en hoe we deze kunnen toepassen. 
 
 
 

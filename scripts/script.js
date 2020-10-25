@@ -1,35 +1,39 @@
 // JavaScript Document
 
 // afbeeldingen personen:
-var persoonPlaatjes = ['persoon1.png', 'persoon2.png', 'persoon3.png', 'persoon4.png' ]
-var persoonInformatie = 
-[{
-img_url: 'persoon1.png',
-naam:'Kerry F.',
-locatie: 'New York', 
-expertise:'B2B expert',
-increase: '+95%' },
- 
-{
-img_url: 'persoon2.png',
-naam:'Gemma, R.',
-locatie: 'San Fransisco', 
-expertise:'E-commerce expert',
-increase: '+135%' },
+var persoonPlaatjes = ['persoon1.png', 'persoon2.png', 'persoon3.png', 'persoon4.png']
+var persoonInformatie = [{
+		img_url: 'persoon1.png',
+		naam: 'Kerry F.',
+		locatie: 'New York',
+		expertise: 'B2B expert',
+		increase: '+95%'
+	},
 
-{
-img_url: 'persoon3.png',
-naam:'Eldar',
-locatie: 'Tel Aviv',
-expertise:'Tech expert',
-increase: '+146%' },
+	{
+		img_url: 'persoon2.png',
+		naam: 'Gemma, R.',
+		locatie: 'San Fransisco',
+		expertise: 'E-commerce expert',
+		increase: '+135%'
+	},
 
-{
-img_url: 'persoon4.png',
-naam:'Amy L.',
-locatie: 'Houston',
-expertise:'Health & Beauty expert',
-increase: '+150%' }]
+	{
+		img_url: 'persoon3.png',
+		naam: 'Eldar',
+		locatie: 'Tel Aviv',
+		expertise: 'Tech expert',
+		increase: '+146%'
+	},
+
+	{
+		img_url: 'persoon4.png',
+		naam: 'Amy L.',
+		locatie: 'Houston',
+		expertise: 'Health & Beauty expert',
+		increase: '+150%'
+	}
+]
 
 
 
@@ -45,9 +49,9 @@ var pijlLinks = document.querySelector('#pijllinks')
 
 
 // toestand
-var beeldfase = 0 ;
- 
-if(persoonImg){
+var beeldfase = 0;
+
+if (persoonImg) {
 
 	toonPersoon()
 }
@@ -56,13 +60,13 @@ if(persoonImg){
 //function eventHandlers
 function toonPersoon() {
 	console.log(beeldfase);
-	
+
 	// timer:
-	setTimeout( anderPersoon, 4000) 
-	
+	setTimeout(anderPersoon, 4000)
+
 	// het tonen van de plaatjes.
 
- 	persoonInformatie[beeldfase].img_url
+	persoonInformatie[beeldfase].img_url
 	persoonNaam.textContent = persoonInformatie[beeldfase].naam;
 	persoonLocatie.textContent = persoonInformatie[beeldfase].locatie;
 	persoonIncrease.textContent = persoonInformatie[beeldfase].increase;
@@ -71,26 +75,41 @@ function toonPersoon() {
 }
 
 function anderPersoon() {
-	if (beeldfase < 4 ) {
-		beeldfase = beeldfase + 1 ;
-	} 
+	if (beeldfase < 4) {
+		beeldfase = beeldfase + 1;
+	}
 
-	if (beeldfase > 3 ) {
-		beeldfase = 0 ;
-	} 
+	if (beeldfase > 3) {
+		beeldfase = 0;
+	}
 
-	
-	toonPersoon() ;
+
+	toonPersoon();
 }
 
 function toonMenu() {
 	document.body.classList.toggle('active');
 }
 
-function carrouselWerken () {
-	carrousel.style.transform = "translateX(-40%)";
+let root = document.documentElement
+
+let counter = 0;
+
+function carrouselWerken() {
+	counter++
+	root.style.setProperty('--translate-x', "-" + counter + "00%")
+
 }
 
-hamburgerButton.addEventListener('click' , toonMenu );
-pijlRechts.addEventListener('click' , carrouselWerken );
+function carrouselRechts() {
+	counter--
+	root.style.setProperty('--translate-x', "-" + counter + "00%")
 
+}
+
+hamburgerButton.addEventListener('click', toonMenu);
+
+
+
+pijlLinks.addEventListener('click', carrouselRechts)
+pijlRechts.addEventListener('click', carrouselWerken);
