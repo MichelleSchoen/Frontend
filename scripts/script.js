@@ -39,6 +39,10 @@ var persoonLocatie = document.querySelector('#locatie')
 var persoonExpertise = document.querySelector('#expertise')
 var persoonIncrease = document.querySelector('#sales')
 var hamburgerButton = document.querySelector('#hamburger')
+var carrousel = document.querySelector('#carrousel')
+var pijlRechts = document.querySelector('#pijlrechts')
+var pijlLinks = document.querySelector('#pijllinks')
+
 
 // toestand
 var beeldfase = 0 ;
@@ -83,4 +87,10 @@ function toonMenu() {
 	document.body.classList.toggle('active');
 }
 
+function carrouselWerken () {
+	carrousel.style.transform = "translateX(-40%)";
+}
+
 hamburgerButton.addEventListener('click' , toonMenu );
+pijlRechts.addEventListener('click' , carrouselWerken );
+

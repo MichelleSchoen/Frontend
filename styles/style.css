@@ -43,7 +43,7 @@ nav {
 	width: 100vw;
 	height: 72vh;
 	z-index: 100;
-	transform: translateY(-100%);
+	transform: translateY(-200%);
 	transition: 0.5s;
 }
 .active nav {
@@ -64,6 +64,10 @@ nav > a:first-of-type {
 
 nav div a{
 	justify-content: center;
+}
+
+nav div {
+	background-color: white;
 }
 
 nav div a:last-of-type {
@@ -127,7 +131,15 @@ main div {
 	display: flex;
 	font-size: 0.9em;
 	justify-content: center;
-	margin-top: 1em;
+	margin-top: 1em;	
+}
+
+main div:first-of-type {
+	display: block;
+}
+
+main div:first-of-type > div {
+	display: flex;
 }
 
 #persoon {
@@ -238,13 +250,22 @@ a {
 	justify-content: center;
 }
 
-section:nth-of-type(2) div:nth-of-type (2){
+section:nth-of-type(2) div:nth-of-type(1){
+	overflow-x: hidden;
+}
+
+
+section:nth-of-type(2) div:nth-of-type(2){
 	position: relative;
 	display: flex;
-	overflow: hidden;
 
 }
 
+
+section:nth-of-type(2) div:nth-of-type(1){
+	display: flex;
+
+}
 section:nth-of-type(2)  article {
 	margin-top: 1em;
 	text-align: center;
@@ -271,12 +292,12 @@ section:nth-of-type(2) > article p {
 
 section:nth-of-type(2) div > button:first-of-type, section:nth-of-type(2) div > button:nth-of-type(2) {
 	position: absolute;
-	transform: translateY(-200%);
 	top: 50%;
 	width: 1.5em;
 	border-style: none;
 	background-color: white;
 	width: 2em;
+	transform: translateY(-800%);
 }
 
 section:nth-of-type(2) div button:first-of-type {
@@ -286,6 +307,7 @@ section:nth-of-type(2) div button:first-of-type {
 section:nth-of-type(2) div button:nth-of-type(2) {
 	right:0;
 }
+
 
 section:nth-of-type(2) a:nth-of-type(2), .pagina2 main a {
 	border-style: none;
@@ -348,6 +370,7 @@ footer > p {
 	margin: 2em;
 }
 
+
 .pagina2 {
 	font-size: 1em;
 }
@@ -357,7 +380,6 @@ footer > p {
 }
 /*.pagina2 main {
 background-image: url("achtergrond2.svg")
-
 }*/
 .pagina2 main {
 	position: relative;
@@ -365,11 +387,27 @@ background-image: url("achtergrond2.svg")
 	margin-bottom: 8em;
 }
 
-.pagina2 main img:first-of-type {
+.pagina2 main h1 {
+	font-size: 2em;
+}
+
+.pagina2 main a {
+	margin: 0;
+}
+
+.pagina2 main img:first-of-type , .pagina2 main img:nth-of-type(2) {
 	position: absolute;
 	top: 0;
-	 z-index: -1;
-	 width: 100%;
+	z-index: -1;
+	width: 100%;
+}
+
+.pagina2 main img:nth-of-type(2) {
+	display: none;
+}
+
+.pagina2 section:first-of-type {
+	background-color: white;
 }
 
 .pagina2 > section:first-of-type h2:nth-of-type(2) {
@@ -398,68 +436,74 @@ background-image: url("achtergrond2.svg")
 
 .pagina2 section:first-of-type > img {
 	width: 100%;
-	margin-top: 3em;
+	height: 100%;
 	margin-bottom: 3em;
 }
  .pagina2 section:nth-of-type(2) article img {
  	width: 90%;
  	margin: 1em;
- }
+}
+
+.pagina2 section:nth-of-type(2) div {
+ 		display: block;
+ 	}
 
  .pagina2 section:nth-of-type(2) > h2:first-of-type {
  	margin: 2em;
- }
+}
  .pagina2 section:nth-of-type(2) article h2{
  	text-align: left;
  	margin: 0;
  	margin-left: 0.7em;
  	margin-bottom: 1em;
  	margin-top: 1em;
- }
+}
 .pagina2 section:nth-of-type(2) {
-	position: relative;
+	/*position: relative;*/
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
+	background-color: #fcf4de;
 }
 
  .pagina2 section:nth-of-type(2) article {
  	text-align: left;
- 	position: absolute;
+ 	/*position: absolute;*/
  	background-color: white;
  	width: 90%;
  	top: 7em;
-
- 	
- }
+ 	justify-content: center;
+ 	margin: auto;
+}
 
  .pagina2 section:nth-of-type(2) article p{
 	font-size:1em;
-	margin-bottom:1em; 
+	margin-bottom:2em;
+	margin-top: 2em;
+
 }
 
  .pagina2 section:nth-of-type(3) {
- background-color: #fcf4de;
- margin: 0;
- margin-top: 25em;
- padding-bottom: 6em;
+	 background-color: #fcf4de;
+	 padding-top: 5em;
+
 }
 
 .pagina2 section:nth-of-type(3) h2 {
-	padding-top: 10em;
 	font-family: 'Roboto Condensed', sans-serif;
 	text-transform: none;
 	font-size: 2em;
 	text-align: center;
 	color: #fd5444;
+	margin: 0;
 
 }
 
 .pagina2 section:nth-of-type(3) ul li div h3 {
-font-family: 'Roboto Condensed', sans-serif;
-font-size: 1.5em;
-margin: 0;
-margin-bottom: 0.5em;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.5em;
+	margin: 0;
+	margin-bottom: 0.5em;
 }
 
 .pagina2 section:nth-of-type(3) ul li img  {
@@ -479,3 +523,167 @@ margin-bottom: 0.5em;
 	color: gray;
 	background-color: pink; 
 }
+
+@media (min-width: 400px) {
+	.pagina2 main a {
+		width: 20em;
+		margin: auto;
+	}
+}
+
+
+@media (min-width: 800px) {
+	main {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	main h1 {
+		font-size: 3em;
+	}
+
+	main h3 {
+		font-size: 1em;
+	}
+
+	main form {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		margin: 3em;
+		padding: 0;	
+	}
+
+	main input:first-of-type {
+		margin: 0;
+	}
+
+	main hr {
+		display: none;
+		min-width: 100;
+	}
+
+	main ul {
+		grid-column: 1 / -1;
+		flex-wrap: nowrap;
+		margin: auto;
+	}
+
+	main ul li img:nth-child(1){
+	width: 10em;
+	padding: 0.5em;
+	}
+
+	section:first-of-type ul:first-of-type {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 2em;
+	}
+
+	section:nth-of-type(2) {
+		display: block;
+	}
+
+
+	section:nth-of-type(2)  article {
+		min-width: 33%
+	}
+
+	section:nth-of-type(2) div:nth-of-type(2){
+		display: none;
+
+	}
+
+	section:nth-of-type(2) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	section:nth-of-type(2) a:last-of-type {
+		margin: auto;
+		margin-top: 3em;
+		margin-bottom: 3em;
+	}
+
+	.pagina2 main{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.pagina2 main img:first-of-type, .pagina2 main img:nth-of-type(2) {
+		width: 20%
+	}
+
+	.pagina2 main img:nth-of-type(2) {
+		right: 0;
+	}
+
+	.pagina2 main img:nth-of-type(2) {
+	display: initial;
+	}
+
+	.pagina2 main h1  {
+		font-size: 3.5em;
+	}
+
+	.pagina2 main h3 {
+		font-size: 1.5em;
+	}
+	.pagina2 main a {
+		width: 20em;
+		margin: auto;
+	}
+
+	.pagina2 section:first-of-type {
+		display: flex;
+	}
+
+	.pagina2 section:first-of-type div {
+		display: flex;
+		flex-direction: column;
+		margin-right: 2em;
+	}
+	.pagina2 section:first-of-type div h2 , .pagina2 section:first-of-type div p  {
+		text-align: left;
+		align-content: left;
+		margin: 0;
+	}
+
+	.pagina2 section:first-of-type img {
+		width: 50em;
+
+	}
+
+	.pagina2 section:first-of-type div ul {
+		display: block;
+	}
+	.pagina2 section:nth-of-type(2) {
+		background-color: #fcf4de;
+		display: flex; 
+		flex-direction: column;
+		justify-content: center;
+	}
+	.pagina2 section:nth-of-type(2) article {
+		display: flex;
+ 	}
+
+ 	.pagina2 section:nth-of-type(3) ul {
+ 		display: grid;
+ 		grid-template-columns: 1fr 1fr;
+ 		grid-gap: 2em;
+ 	}
+ 
+ 	footer div:first-of-type a {
+ 		display: flex;
+ 		justify-content: center;
+ 	}
+
+}
+
+
+
+
+
+
+
