@@ -7,6 +7,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Bronnenlijst
 1. https://www.mayple.com/
+2. https://css-tricks.com/updating-a-css-variable-with-javascript/
+3. https://www.way2tutorial.com/html/html_marquee_image.php
+4. https://codepen.io/michelleschoen/pen/yLOEXRj
+5. https://cssgridgarden.com/#nl
 
 
 
