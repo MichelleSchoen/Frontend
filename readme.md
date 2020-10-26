@@ -11,6 +11,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 3. https://www.way2tutorial.com/html/html_marquee_image.php
 4. https://codepen.io/michelleschoen/pen/yLOEXRj
 5. https://cssgridgarden.com/#nl
+6. https://codepen.io/michelleschoen/pen/OJNEgoW
+7. https://css-tricks.com/snippets/css/complete-guide-grid/
+
 
 
 
